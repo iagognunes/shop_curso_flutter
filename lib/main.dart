@@ -15,7 +15,9 @@ class Shop extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Shop',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue)
+            .copyWith(secondary: Colors.deepOrange),
+        fontFamily: 'Lato',
       ),
       home: ProductsOverviewPage(),
     );
