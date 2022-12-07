@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_curso_flutter/views/home_page.dart';
+import 'package:shop_curso_flutter/views/products_overview_page.dart';
 
 void main() {
   runApp(const Shop());
@@ -12,11 +12,12 @@ class Shop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Shop',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: ProductsOverviewPage(),
     );
   }
 }

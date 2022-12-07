@@ -6,14 +6,14 @@ class ProductModel {
   final String imageUrl;
   bool isfavorite;
 
-  ProductModel(
-    this.id,
-    this.title,
-    this.description,
-    this.price,
-    this.imageUrl,
-    this.isfavorite,
-  );
+  ProductModel({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.price,
+    required this.imageUrl,
+    this.isfavorite = false,
+  });
 
   void toggleFavorite() {
     isfavorite = !isfavorite;
